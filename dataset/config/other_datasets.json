@@ -1,0 +1,78 @@
+{
+    "other_data_windows":{
+        "Instance22": [[-10, 90]],
+        "MSD_Liver": [[-50, 150], [-140, 260]],
+        "MSD_Lung": [[-1150, 350], [-135, 215]],
+        "KiTS23": [[-135, 215], [-140, 260]],
+        "KiPA22": [[-135, 215], [-140, 260]],
+        "MSD_Colon": [[-135, 215], [-140, 260]],
+        "COVID19": [[-1150, 350], [-135, 215]],
+        "NSCLC": [[-1150, 350], [-135, 215]],
+        "LIDC_IDRI": [[-1150, 350], [-135, 215]],
+        "LNDb": [[-1150, 350], [-135, 215]],
+        "SegRap2023_Task2":[[-135, 215]],
+        "MSD_Pancreas": [[-135, 215], [-140, 260]],
+        "FUMPE": [[-135, 215]],
+        "RibFrac": [[-400, 1100]],
+        "Adrenal_ACC_Ki67": [[-135, 215], [-140, 260]],
+        "IRCADB3D": [[-50, 150], [-135, 215], [-140, 260]],
+        "ULS23RadboudumcBone": [[-400, 1100]],
+        "ULS23RadboudumcPancreas": [[-135, 215], [-140, 260]],
+        "LNQ2023": [[-135, 215]],
+        "QUBIQ21_PancreasLesion": [[-135, 215], [-140, 260]],
+        "MosMed": [[-1150, 350], [-135, 215]]
+    },
+    "augmentation": {
+        "RandDropContext": 0.3,
+        "RandRotate90": {
+            "prob": 0.3,
+            "max_k": 3
+        },
+        "RandRotate": {
+            "range": 0.15,
+            "prob": 0.5
+        },
+        "RandZoom": {
+            "min_zoom": 0.7,
+            "max_zoom": 1.4,
+            "prob": 0.5
+        },
+        "RandGaussianNoise": {
+            "prob": 0.2,
+            "mean": 0.0,
+            "std": 0.2
+        },
+        "RandGaussianSmooth": {
+            "sigma": [0.1, 1.0],
+            "prob": 0.3
+        },
+        "RandScaleIntensity": {
+            "factors": [
+                -0.25,
+                0.25
+            ],
+            "prob": 0.5
+        },
+        "RandSimulateLowResolution": {
+            "prob": 0.1
+        },
+        "RandAdjustContrastInvert": {
+            "retain_stats": true,
+            "invert_image": true,
+            "gamma": [
+                0.7,
+                1.5
+            ],
+            "prob": 0.1
+        },
+        "RandAdjustContrast": {
+            "retain_stats": true,
+            "invert_image": false,
+            "gamma": [
+                0.7,
+                1.5
+            ],
+            "prob": 0.3
+        }
+    }
+}

@@ -1,0 +1,6 @@
+mlruns/*
+checkpoints/*
+log/*
+wandb/*
+*.pyc
+demo/*
