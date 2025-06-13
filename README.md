@@ -69,7 +69,10 @@ Run:
 ```
 python inference.py
 ```
-Note that we provide 3 demo cases (one for each task) in the script for your reference.
+We also provide 3 demo cases (one for each task) in the script for your reference. 
+
+Note that to mark an abnormality with visual prompt, directly draw on the image (box, circle, ellipse, outline, contour) or save the cropped region as a image file.
+
 
 ## Traning Guidance
 Prepare your training configuration in `train.yaml` and continue fine-tuning on our checkpoint:
