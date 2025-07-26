@@ -304,7 +304,7 @@ class Grounding_Dataset(Dataset):
             img = (img - np.mean(img)) / (np.std(img) + 1e-10)
             # img = cv2.normalize(img, None, 0, 255, cv2.NORM_MINMAX, cv2.CV_8U)
             img_ls.append(img)
-            # cv2.imwrite(f'/mnt/petrelfs/zhaoziheng/Med-ULS/Segmentation_Detection/log/intermedia_results/deeplesion_{idx}_{file_name}_{img.shape}', img)
+            # cv2.imwrite(f'/mnt/petrelfs/zhaoziheng/OminiAbnorm-CT/OminiAbnorm-CT-2D/Segmentation_Detection/log/intermedia_results/deeplesion_{idx}_{file_name}_{img.shape}', img)
         stack_img = np.stack(img_ls, axis=-1)   # h w d
         
         # load pil image for vlm

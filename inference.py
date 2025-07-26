@@ -478,6 +478,6 @@ if __name__ == "__main__":
     # chat(image_path, text_input)
     
     # Get user input
-    image_path = input("Please enter the path to the CT image or an image directory: ").strip()
+    image_path = input("Please enter the path to the CT image (e.g., demo/demo3/demo3.jpeg) or an image directory (e.g., demo/demo2): ").strip()
     text_input = input("Please enter your text instruction: ").strip()
     chat(image_path, text_input)
